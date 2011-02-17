@@ -9,10 +9,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110217184542) do
+ActiveRecord::Schema.define(:version => 20110217191424) do
 
   create_table "comments", :force => true do |t|
-    t.datetime "date"
     t.string   "name"
     t.string   "url"
     t.text     "comment"
@@ -23,7 +22,6 @@ ActiveRecord::Schema.define(:version => 20110217184542) do
 
   create_table "posts", :force => true do |t|
     t.date     "date"
-    t.integer  "number"
     t.string   "title"
     t.text     "postdesc"
     t.text     "content"
