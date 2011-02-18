@@ -4,18 +4,18 @@
   <tr>
     <th>Date</th>
     <th>Title</th>
-    <th>Postdesc</th>
-    <th>Content</th>
     <th>Category</th>
+    <th>Description</th>
+    <th>Content</th>
   </tr>
 
 <% @posts.each do |post| %>
   <tr>
     <td><%=h post.date %></td>
     <td><%=h post.title %></td>
+    <td><%=h post.category %></td>
     <td><%=h post.postdesc %></td>
     <td><%=h post.content %></td>
-    <td><%=h post.category %></td>
     <td><%= link_to 'Show', post %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
     <td><%= link_to 'Destroy', post, :confirm => 'Are you sure?', :method => :delete %></td>

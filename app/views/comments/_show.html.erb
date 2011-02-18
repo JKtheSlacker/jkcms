@@ -1,0 +1,7 @@
+<p>Comment from: <%=h comment.nombre%> - <a href="
+  <%=h comment.sitio%>"><%=h comment.sitio %></a></p>
+  <p>Comment: <%=h comment.comentario %></p>
+  <p><em><%=h comment.date %></em></p>
+  <p><%= link_to 'Edit', edit_post_comment_path(@post, comment) %></p>
+  <p><%= link_to 'Delete' destroy_post_comment_path(@post, comment),
+          :confirm => 'Are you sure?', :method => :delete %></p>
