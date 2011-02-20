@@ -1,4 +1,4 @@
 <h1>Comments for <%= @post.title %></h1>
-<% for comment in @comments %>
+<% for comment in @post.comments %>
 <%= render :partial => "show" %>
 <% end %>

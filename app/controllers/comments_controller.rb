@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
   end
 
   def show
-    @comments = @post.comments.find[params[:id]]
+    @comments = @post.comments.find(params[:id])
   end
 
   def new

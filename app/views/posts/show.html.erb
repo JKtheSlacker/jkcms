@@ -23,10 +23,7 @@
   <%=h @post.content %>
 </p>
 
-<% @post.comments.each do |c| %>
-  <%= render :partial => "comments/show", :locals =>
-    { :comment => c } %>
-<% end %>
+<%= render @post.comments %>
 
 <%= render "comments/form" %>
 
