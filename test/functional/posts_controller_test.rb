@@ -14,10 +14,13 @@ class PostsControllerTest < ActionController::TestCase
 
   test "should create post" do
     assert_difference('Post.count') do
-      post :create, :post => { }
+      post :create, :post => { :title => 'some title', 
+	:postdesc => 'some desc', :category => 'testing',
+	:content => 'Test content' }
     end
-
+    
     assert_redirected_to post_path(assigns(:post))
+    assert_equal 'Post was successfully created.', flash[:notice]
   end
 
   test "should show post" do

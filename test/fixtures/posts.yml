@@ -2,16 +2,14 @@
 
 one:
   date: 2011-02-14
-  number: 1
   title: MyString
   postdesc: MyText
   content: MyText
-  category: MyText
+  category: MyString
 
 two:
   date: 2011-02-14
-  number: 1
   title: MyString
   postdesc: MyText
   content: MyText
-  category: MyText
+  category: MyString
